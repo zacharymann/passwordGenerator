@@ -1,0 +1,78 @@
+/* Star Selector (Selects every element in the HTML file) */
+* {
+    /* Includes the padding and border when setting a width or eight for an element */
+    box-sizing: border-box;
+  }
+
+  body {
+      background: rgb(81, 203, 252);
+      background:url(viktor.jpg);
+      background-size: cover;
+      color: #eef1ef;
+      font-family: 'Open Sans', sans-serif;
+        /* Flexbox used to cventer the div vertically and horizontally */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* Setting the height to 100vh so the div will be centered vertically in the browser window (AKA the viewport) */
+      height: 100vh;
+      /* So the div container is not up against the edge of the viewport on smaller screen sizes */
+      padding: 25px;
+  }
+
+  h2 {
+      /* Top Right/Left Bottom */
+      margin: 10px 0 20px;
+      text-align: center;
+  }
+
+.container {
+    background: rgb(166, 172, 172);
+    padding: 15px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.result-container {
+    background: #818180;
+    height: 50px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px;
+    /* Flexbox used to position the span (NOTE: Default value for justify-content is flex-start) */
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.btn {
+    background: whitesmoke;
+    border: none;
+    cursor: pointer;
+    padding: 8px 12px;
+}
+
+.setting {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+#clipboard {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 20px;
+}
+
+#generate {
+    font-size: 16px;
+    width: 100%;
+}
+
+/* Changes font sizse of generated password for smaller screens */
+@media (max-width: 400px) {
+    .result-container {
+        font-size: 14px;
+    }
+}
